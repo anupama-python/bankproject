@@ -1,0 +1,7 @@
+<form action="Login" method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="Enter your username"><br>
+    <input type="password" name="password" placeholder="Enter your password"><br>
+    <a class="btn btn-danger" href="{% url 'bankapp:new' %}"><b>Submit</b></a>
+</form>
+  Please Click <a href="{% url 'bankapp:register' %}">Here</a>to register
